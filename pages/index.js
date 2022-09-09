@@ -14,10 +14,7 @@ const Home = ({ products, bannerData }) => (
       <p>Mountain Bikes of many Variations</p>
     </div>
     <div className='products-container'>
-      {products?.map
-        (
-          product => product.name
-        )}
+      {products?.map(product => product.name)}
     </div>
 
     <FooterBanner />
