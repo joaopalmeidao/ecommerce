@@ -5,7 +5,7 @@ export default {
     fields: [
         {
             name: 'image',
-            title: 'Image',
+            title: 'Image (Imagem)',
             type: 'array',
             of: [{ type: 'image' }],
             options: {
@@ -14,7 +14,7 @@ export default {
         },
         {
             name: 'name',
-            title: 'Name',
+            title: 'Name (Nome do Produto)',
             type: 'string',
         },
         {
@@ -28,13 +28,18 @@ export default {
         },
         {
             name: 'price',
-            title: 'Price',
+            title: 'Price (Preço)',
             type: 'number',
         },
         {
             name: 'promotional_price',
-            title: 'Promotional Price',
+            title: 'Promotional Price (Preço Promocional)',
             type: 'number',
+        },
+        { 
+            name: 'details',
+            title: 'Details (Detalhes)',
+            type: 'string',
         }
     ]
 }
