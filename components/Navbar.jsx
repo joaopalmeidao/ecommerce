@@ -9,8 +9,8 @@ const Navbar = () => {
         <Link href='/'>JP Bikes</Link>
       </p>
       <button type='button' className='cart-icon' onClick=''>
-      <FiShoppingCart />
-      <span className='cart-item-qty'>#TODO:qunatity</span>
+        <FiShoppingCart />
+        <span className='cart-item-qty'>#TODO:qunatity</span>
       </button>
     </div>
   )

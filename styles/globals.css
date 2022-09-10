@@ -494,7 +494,7 @@ span.text-red {
 }
 
 .product-detail-image:hover {
-  background-color: #f02d34;
+  background-color: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -513,7 +513,7 @@ span.text-red {
 }
 
 .selected-image {
-  background-color: #f02d34;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .reviews {
