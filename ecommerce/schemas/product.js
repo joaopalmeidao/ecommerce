@@ -35,6 +35,11 @@ export default {
             name: 'details',
             title: 'Details',
             type: 'string',
+        },
+        {
+            name: 'promotional_price',
+            title: 'Promotional Price',
+            type: 'number',
         }
     ]
 }
