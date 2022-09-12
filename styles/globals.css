@@ -742,6 +742,12 @@ span.text-red {
 
 /* ADDED */
 
+@media screen and (max-width:1080px) {
+  .footer-banner-container {
+    height: fit-content;
+  }
+}
+
 @media screen and (max-width:800px) {
   .hero-banner-container {
     height: 560px;
@@ -755,7 +761,7 @@ span.text-red {
   }
 
   .footer-banner-container {
-    height: 650px;
+    height: fit-content;
     margin-top: 80px;
 
   }
