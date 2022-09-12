@@ -23,6 +23,7 @@ const FooterBanner = ({ footerBanner: {
           <h3>{midText}</h3>
           <p>{desc}</p>
           <p>{saleTime}</p>
+          {/* TODO: shop now button */}
           <Link href={`/product/${product}`}>
             <button type='button'>
               {buttonText}
