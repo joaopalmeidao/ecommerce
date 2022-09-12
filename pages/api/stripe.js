@@ -34,7 +34,9 @@ export default async function handler(req, res) {
                         quantity: item.quantity
                     }
                 }),
+                // TODO:Create success message page
                 success_url: `${req.headers.origin}/success`,
+                // TODO:Create cancel message page
                 cancel_url: `${req.headers.origin}/canceled`,
             }
 
