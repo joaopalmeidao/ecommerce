@@ -22,7 +22,6 @@ a {
   max-width: 1400px;
   margin: auto;
   width: 100%;
-
 }
 
 .layout {
@@ -323,7 +322,6 @@ span.text-red {
   float: right;
   padding: 40px 10px;
   position: relative;
-
 }
 
 .footer-container {
@@ -386,6 +384,7 @@ span.text-red {
   overflow: auto;
   max-height: 70vh;
   padding: 20px 10px;
+  max-height: 500px;
 }
 
 .product {
@@ -414,6 +413,7 @@ span.text-red {
 }
 
 .flex h5 {
+  /* padding-bottom: 5px; */
   font-size: 24px;
 }
 
@@ -437,15 +437,17 @@ span.text-red {
   cursor: pointer;
   background: transparent;
   border: none;
+  transform: translateX(310px);
 }
 
 .cart-bottom {
   position: absolute;
-  bottom: 12px;
-  right: 5px;
+  bottom: 0px;
+  right: 50px;
   width: 100%;
   padding: 30px 65px;
-
+  background: white;
+  width: fit-content;
 }
 
 .btn-container {
@@ -575,6 +577,7 @@ span.text-red {
   width: 200px;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
+  border-radius: 10px;
 }
 
 .buttons .add-to-cart:hover {
@@ -594,15 +597,20 @@ span.text-red {
   cursor: pointer;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
+
+  border-radius: 10px;
 }
+
 
 .buttons .buy-now:hover {
   transform: scale(1.1, 1.1)
 }
 
 .quantity-desc {
+  width: fit-content;
   border: 1px solid gray;
   padding: 6px;
+  border-radius: 10px;
 }
 
 .quantity-desc span {
@@ -612,18 +620,17 @@ span.text-red {
 }
 
 .quantity-desc .minus {
-  border-right: 1px solid gray;
+  /* border-right: 1px solid gray; */
   color: #f02d34;
 }
 
 .quantity-desc .num {
-  border-right: 1px solid gray;
+  /* border-right: 1px solid gray; */
   font-size: 20px;
 }
 
 .quantity-desc .plus {
   color: rgb(49, 168, 49);
-
 }
 
 .maylike-products-wrapper {
@@ -654,7 +661,6 @@ span.text-red {
 .cancel-wrapper {
   background-color: white;
   min-height: 60vh;
-
 }
 
 .success,
@@ -712,6 +718,30 @@ span.text-red {
   margin-top: 10px;
 }
 
+
+/* ADDED */
+
+.product-container img {
+  max-width: 20%;
+  max-height: 100px;
+}
+
+.product-container h5 {
+  font-size: 20px;
+}
+
+.product-container h4 {
+  font-weight: 700;
+  color: #f02d34;
+  transform: translateY(10px);
+}
+
+.in-cash-price {
+  padding-bottom: 14px;
+}
+
+/* ADDED */
+
 @media screen and (max-width:800px) {
   .hero-banner-container {
     height: 560px;
@@ -725,8 +755,9 @@ span.text-red {
   }
 
   .footer-banner-container {
-    height: 560px;
+    height: 650px;
     margin-top: 80px;
+
   }
 
   .footer-banner-image {
@@ -850,11 +881,15 @@ span.text-red {
 
   .flex h4 {
     font-size: 16px;
-    color: black;
+    /* color: black; */
+    transform: translateX(1px);
+    color: red;
+    /* padding-bottom: 10px; */
   }
 
   .cart-bottom {
     padding: 30px;
+    right: 36px;
   }
 
   .total h3 {
@@ -890,5 +925,14 @@ span.text-red {
   .btn-container {
     width: 300px;
     margin: auto;
+  }
+
+  .remove-item {
+    font-size: 24px;
+    color: #f02d34;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    transform: translateX(200px);
   }
 }

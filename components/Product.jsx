@@ -10,15 +10,15 @@ const Product = ({ product: {
     <div>
       <Link href={`/product/${slug.current}`}>
         <div className="product-card">
-          <img src={urlFor(image && image[0])} 
-          alt="" 
-          width={250}          
-          height={250}   
-          className="product-image"
+          <img src={urlFor(image && image[0])}
+            alt=""
+            width={250}
+            height={250}
+            className="product-image"
           />
           <p className="product-name">{name}</p>
-          <p className="product-price">À Prazo R$ {price}</p>
-          <p className="product-price">À vista R$ {promotional_price}</p>
+          <p className="product-price">À Prazo R$ {price.toFixed(2)}</p>
+          <p className="product-price">À vista R$ {promotional_price.toFixed(2)}</p>
         </div>
       </Link>
     </div>
