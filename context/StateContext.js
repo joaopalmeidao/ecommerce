@@ -52,7 +52,8 @@ export const StateContext = ({ children }) => {
 
     const toggleCartItemQuantity = (id, value) => {
 
-        // #TODO: fix the error on the changing cart items positions
+        // #TODO: fix the error on the changing cart items positions 
+        // O produto só troca de posição quando mudado a quantidade do primeiro produto do carrinho
 
         foundProduct = cartItems.find((item) => item._id === id)
         index = cartItems.findIndex((product) => product._id === id);
